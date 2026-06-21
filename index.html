@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Prompt 範本庫 | Free AI Prompt Templates Library (ChatGPT / Claude / Gemini)</title>
+<meta name="description" content="免費 AI Prompt 範本庫：寫作、程式、行銷、學習、商業等高品質提示詞範本，一鍵複製，適用 ChatGPT / Claude / Gemini。Free curated AI prompt templates library.">
+<meta property="og:title" content="AI Prompt 範本庫">
+<meta property="og:description" content="高品質提示詞範本，一鍵複製，適用 ChatGPT / Claude / Gemini。">
+<meta name="google-site-verification" content="jV8Xt5l-peRpLknp7xKYpvN8N5tCAkMctq0D-3RVyzk">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5115666613619890" crossorigin="anonymous"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MY95FHB8JG"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-MY95FHB8JG');</script>
+<style>
+  *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#0a0a0f;color:#e8e8f0;min-height:100vh;padding:28px 16px 56px;line-height:1.5}
+  .wrap{max-width:680px;margin:0 auto}
+  .topbar{display:flex;align-items:center;gap:10px;margin-bottom:6px}
+  .topbar h1{font-size:18px;font-weight:700;flex:1}
+  .lang-btn{padding:6px 12px;border-radius:99px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.06);color:#c7c7f0;font-size:12px;font-weight:700;cursor:pointer}
+  .sub{color:#7878a0;font-size:13px;margin-bottom:14px}
+  #search{width:100%;background:#12121a;border:1px solid rgba(255,255,255,.1);border-radius:10px;color:#e8e8f0;padding:11px;font-size:14px;margin-bottom:12px}
+  .cats{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:14px}
+  .cat{padding:6px 12px;border-radius:99px;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.04);color:#9a9ac0;font-size:12.5px;cursor:pointer;font-weight:600}
+  .cat.on{background:rgba(99,102,241,.25);color:#c7c7f0;border-color:rgba(99,102,241,.4)}
+  .p{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:12px;padding:14px;margin-bottom:10px}
+  .p .h{display:flex;align-items:center;gap:8px;margin-bottom:8px}
+  .p .h b{font-size:14px;flex:1}
+  .p .tag{font-size:9.5px;font-weight:700;padding:2px 7px;border-radius:99px;background:rgba(99,102,241,.18);color:#a5b4fc}
+  .p pre{white-space:pre-wrap;word-break:break-word;font-size:12.5px;color:#b8b8d8;background:#101018;border-radius:8px;padding:10px;font-family:ui-monospace,Menlo,monospace;line-height:1.55}
+  .copy{margin-top:8px;padding:7px 14px;border-radius:8px;border:1px solid rgba(99,102,241,.4);background:rgba(99,102,241,.15);color:#c7c7f0;font-size:12px;font-weight:700;cursor:pointer}
+  .copy.done{background:rgba(16,185,129,.2);border-color:rgba(16,185,129,.4);color:#10b981}
+  .ad-slot{width:100%;min-height:90px;background:rgba(255,255,255,.02);border:1px dashed rgba(255,255,255,.07);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:11px;color:#303048;margin:16px 0}
+  .aff{display:flex;align-items:center;gap:12px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:12px;padding:12px 14px;text-decoration:none;color:inherit}
+  .aff .i{font-size:22px}.aff b{font-size:13px}.aff span{font-size:11px;color:#7878a0;display:block}
+  .note{font-size:10.5px;color:#50506e;margin-top:8px;line-height:1.6}
+  .footer{margin-top:20px;text-align:center;font-size:11px;color:#444466;line-height:1.8}
+  .footer a{color:#6868a0;text-decoration:none}.footer a:hover{text-decoration:underline}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="topbar"><span style="font-size:24px">📝</span><h1 data-i18n="title">AI Prompt 範本庫</h1><button class="lang-btn" id="langBtn" onclick="toggleLang()">EN</button></div>
+  <div class="sub" data-i18n="sub">高品質提示詞範本，一鍵複製，把 {括號} 換成你的內容即可。適用 ChatGPT / Claude / Gemini。</div>
+  <input id="search" placeholder="🔍 搜尋 prompt...">
+  <div class="cats" id="cats"></div>
+  <div id="list"></div>
+  <ins class="adsbygoogle ad-slot" style="display:block" data-ad-client="ca-pub-5115666613619890" data-ad-format="auto" data-full-width-responsive="true"></ins>
+  <a class="aff" href="https://www.amazon.com/dp/059371671X?tag=ytstories0413-20" target="_blank" rel="nofollow sponsored noopener">
+    <div class="i">📚</div><div><b data-i18n="book_t">Co-Intelligence（AI 暢銷書）</b><span data-i18n="book_d">紐時暢銷 · 學會寫出更好的 prompt</span></div>
+  </a>
+  <div class="note" data-i18n="aff_disc">含 Amazon 聯盟連結，透過連結購買我們可能獲得回饋，不影響你的價格。As an Amazon Associate we earn from qualifying purchases.</div>
+  <div class="footer">
+    <a href="https://slashman413.github.io/" data-i18n="home">← 回 AI工具人首頁</a><br>
+    <a href="https://slashman413.github.io/terms.html" data-i18n="terms">服務說明</a> · <a href="https://slashman413.github.io/privacy.html" data-i18n="privacy">隱私權政策</a>
+  </div>
+</div>
+<script>
+  const $=id=>document.getElementById(id);
+  const CATS=[["all","全部","All"],["write","寫作","Writing"],["code","程式","Coding"],["mkt","行銷","Marketing"],["learn","學習","Learning"],["biz","商業","Business"],["life","生活","Life"]];
+  const PROMPTS=[
+    ["write","Summarize","把以下內容濃縮成 5 個重點，用簡單清楚的語言：\n\n{貼上文章}"],
+    ["write","Rewrite professionally","把這段文字改寫得更專業、精煉、有條理，保留原意：\n\n{你的文字}"],
+    ["write","Email reply","幫我寫一封禮貌、專業的 email 回覆。情境：{說明情境}。語氣：{正式/親切}。"],
+    ["code","Explain code","逐行解釋這段程式碼在做什麼，並指出可能的 bug 或可優化處：\n\n{貼上程式碼}"],
+    ["code","Debug","這段程式碼有錯誤：{錯誤訊息}。程式碼如下，請找出原因並給修正版：\n\n{程式碼}"],
+    ["code","Write function","用 {語言} 寫一個函式：{描述需求}。要有註解、處理邊界情況，並附使用範例。"],
+    ["mkt","Ad copy","為 {產品} 寫 3 組吸睛的廣告文案，目標受眾：{受眾}，主打：{賣點}，附 emoji 與 hashtag。"],
+    ["mkt","Hooks","給我 10 個能讓人停下滑動的開場 hook，主題：{主題}，平台：{IG/YouTube/Threads}。"],
+    ["mkt","SEO outline","為關鍵字「{關鍵字}」寫一篇部落格大綱：標題 + H2/H3 + 每段重點，目標是衝 Google 排名。"],
+    ["learn","Explain like 12","用 12 歲也聽得懂的方式解釋「{概念}」，搭配一個生活化比喻和一個例子。"],
+    ["learn","Study plan","幫我規劃 {天數} 天學會「{主題}」的計畫，每天列出目標、資源與練習。"],
+    ["learn","Quiz me","針對「{主題}」出 5 題測驗（含答案與解析），由淺入深考我。"],
+    ["biz","Pros & cons","列出「{決策}」的優缺點各 5 點，並給一個基於風險的建議。"],
+    ["biz","Meeting notes","把這段會議逐字稿整理成：決議、待辦(負責人/期限)、後續追蹤：\n\n{逐字稿}"],
+    ["biz","SWOT","為「{公司/產品}」做 SWOT 分析，每項列 3-4 點並附簡短說明。"],
+    ["life","Meal plan","幫我規劃一週健康菜單，條件：{熱量/預算/口味/過敏}，附簡易採買清單。"],
+    ["life","Trip plan","規劃 {天數} 天 {目的地} 行程，預算 {金額}，偏好 {美食/自然/文化}，每天排程含交通。"],
+    ["life","Decision","我在 {A} 和 {B} 之間猶豫，幫我用清單列出考量點，問我關鍵問題，再給建議。"],
+  ];
+  let cat='all', q='';
+  $("cats").innerHTML=CATS.map(([k])=>`<button class="cat ${k==='all'?'on':''}" data-k="${k}"></button>`).join("");
+  function render(){
+    $("list").innerHTML=PROMPTS.filter(p=>(cat==='all'||p[0]===cat)&&(!q||(p[1]+p[2]).toLowerCase().includes(q))).map((p,i)=>{
+      const catName=CATS.find(c=>c[0]===p[0]); const cn=catName?catName[LANG==='en'?2:1]:'';
+      return `<div class="p"><div class="h"><b>${p[1]}</b><span class="tag">${cn}</span></div><pre>${p[2].replace(/</g,'&lt;')}</pre><button class="copy" onclick="cp(this,${PROMPTS.indexOf(p)})" data-i18n="copy">複製</button></div>`;
+    }).join("")||`<div style="color:#666;text-align:center;padding:30px" >—</div>`;
+    document.querySelectorAll('.copy').forEach(b=>{ const t=I18N.copy[LANG==='en'?1:0]; if(!b.classList.contains('done'))b.textContent=t; });
+  }
+  window.cp=(btn,idx)=>{ navigator.clipboard.writeText(PROMPTS[idx][2]); btn.classList.add('done'); btn.textContent=I18N.copied[LANG==='en'?1:0]; setTimeout(()=>{btn.classList.remove('done');btn.textContent=I18N.copy[LANG==='en'?1:0];},1500); };
+  document.querySelectorAll('.cat').forEach(b=>b.addEventListener('click',()=>{ cat=b.dataset.k; document.querySelectorAll('.cat').forEach(x=>x.classList.remove('on')); b.classList.add('on'); render(); }));
+  $("search").addEventListener('input',e=>{ q=e.target.value.toLowerCase(); render(); });
+
+  const I18N={
+    title:["AI Prompt 範本庫","AI Prompt Library"],
+    sub:["高品質提示詞範本，一鍵複製，把 {括號} 換成你的內容即可。適用 ChatGPT / Claude / Gemini。","Curated prompt templates — copy & replace {brackets}. Works with ChatGPT / Claude / Gemini."],
+    copy:["複製","Copy"], copied:["已複製 ✓","Copied ✓"],
+    book_t:["Co-Intelligence（AI 暢銷書）","Co-Intelligence (AI bestseller)"], book_d:["紐時暢銷 · 學會寫出更好的 prompt","NYT bestseller · write better prompts"],
+    aff_disc:["含 Amazon 聯盟連結，透過連結購買我們可能獲得回饋，不影響你的價格。As an Amazon Associate we earn from qualifying purchases.","Contains Amazon affiliate links — at no extra cost to you. As an Amazon Associate we earn from qualifying purchases."],
+    home:["← 回 AI工具人首頁","← Back to AI Toolkit home"], terms:["服務說明","Terms"], privacy:["隱私權政策","Privacy"],
+  };
+  let LANG=localStorage.getItem('site_lang')||'zh';
+  function setLang(l){ LANG=l; const i=l==='en'?1:0;
+    document.querySelectorAll('.cat').forEach(b=>{ const c=CATS.find(x=>x[0]===b.dataset.k); if(c) b.textContent=c[i?2:1]; });
+    document.querySelectorAll('[data-i18n]').forEach(el=>{ const t=I18N[el.getAttribute('data-i18n')]; if(t) el.textContent=t[i]; });
+    document.documentElement.lang=l==='en'?'en':'zh-TW'; $("langBtn").textContent=l==='en'?'中':'EN'; localStorage.setItem('site_lang',l); render();
+  }
+  function toggleLang(){ setLang(LANG==='en'?'zh':'en'); } window.toggleLang=toggleLang;
+  setLang(LANG);
+  try{(adsbygoogle=window.adsbygoogle||[]).push({})}catch(e){}
+</script>
+</body>
+</html>
