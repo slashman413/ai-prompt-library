@@ -46,7 +46,7 @@
 <div class="wrap">
   <div class="topbar"><span style="font-size:24px">📝</span><h1 data-i18n="title">AI Prompt 範本庫</h1><button class="lang-btn" id="langBtn" onclick="toggleLang()">EN</button></div>
   <div class="sub" data-i18n="sub">高品質提示詞範本，一鍵複製，把 {括號} 換成你的內容即可。適用 ChatGPT / Claude / Gemini。</div>
-  <input id="search" placeholder="🔍 搜尋 prompt...">
+  <input id="search" placeholder="🔍 搜尋 prompt...（按 / 快速搜尋）">
   <div class="cats" id="cats"></div>
   <div id="list"></div>
   <ins class="adsbygoogle ad-slot" style="display:block" data-ad-client="ca-pub-5115666613619890" data-ad-format="auto" data-full-width-responsive="true"></ins>
@@ -113,6 +113,7 @@
   }
   function toggleLang(){ setLang(LANG==='en'?'zh':'en'); } window.toggleLang=toggleLang;
   setLang(LANG);
+  document.addEventListener('keydown',function(e){if(e.key==='/'&&e.target.tagName!=='INPUT'){e.preventDefault();document.getElementById('search').focus();}});
   try{(adsbygoogle=window.adsbygoogle||[]).push({})}catch(e){}
 </script>
 </body>
