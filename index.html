@@ -44,7 +44,7 @@
 </head>
 <body>
 <div class="wrap">
-  <div class="topbar"><span style="font-size:24px">📝</span><h1 data-i18n="title">AI Prompt 範本庫</h1><button class="lang-btn" id="langBtn" onclick="toggleLang()">EN</button></div>
+  <div class="topbar"><span style="font-size:24px">📝</span><h1 data-i18n="title">AI Prompt 範本庫</h1><select class="lang-btn" id="langSel" onchange="setLang(this.value)" aria-label="Language" style="cursor:pointer"><option value="en">EN</option><option value="zh">中</option><option value="es">ES</option><option value="hi">हि</option><option value="ar">ع</option></select></div>
   <div class="sub" data-i18n="sub">高品質提示詞範本，一鍵複製，把 {括號} 換成你的內容即可。適用 ChatGPT / Claude / Gemini。</div>
   <input id="search" placeholder="🔍 搜尋 prompt...（按 / 快速搜尋）">
   <div class="cats" id="cats"></div>
@@ -99,21 +99,8 @@
   document.querySelectorAll('.cat').forEach(b=>b.addEventListener('click',()=>{ cat=b.dataset.k; document.querySelectorAll('.cat').forEach(x=>x.classList.remove('on')); b.classList.add('on'); render(); }));
   $("search").addEventListener('input',e=>{ q=e.target.value.toLowerCase(); render(); });
 
-  const I18N={
-    title:["AI Prompt 範本庫","AI Prompt Library"],
-    sub:["高品質提示詞範本，一鍵複製，把 {括號} 換成你的內容即可。適用 ChatGPT / Claude / Gemini。","Curated prompt templates — copy & replace {brackets}. Works with ChatGPT / Claude / Gemini."],
-    copy:["複製","Copy"], copied:["已複製 ✓","Copied ✓"],
-    book_t:["Co-Intelligence（AI 暢銷書）","Co-Intelligence (AI bestseller)"], book_d:["紐時暢銷 · 學會寫出更好的 prompt","NYT bestseller · write better prompts"],
-    aff_disc:["含 Amazon 聯盟連結，透過連結購買我們可能獲得回饋，不影響你的價格。As an Amazon Associate we earn from qualifying purchases.","Contains Amazon affiliate links — at no extra cost to you. As an Amazon Associate we earn from qualifying purchases."],
-    home:["← 回 AI工具人首頁","← Back to AI Toolkit home"], terms:["服務說明","Terms"], privacy:["隱私權政策","Privacy"],
-  };
-  let LANG=localStorage.getItem('site_lang')||'zh';
-  function setLang(l){ LANG=l; const i=l==='en'?1:0;
-    document.querySelectorAll('.cat').forEach(b=>{ const c=CATS.find(x=>x[0]===b.dataset.k); if(c) b.textContent=c[i?2:1]; });
-    document.querySelectorAll('[data-i18n]').forEach(el=>{ const t=I18N[el.getAttribute('data-i18n')]; if(t) el.textContent=t[i]; });
-    document.documentElement.lang=l==='en'?'en':'zh-TW'; $("langBtn").textContent=l==='en'?'中':'EN'; localStorage.setItem('site_lang',l); render();
-  }
-  function toggleLang(){ setLang(LANG==='en'?'zh':'en'); } window.toggleLang=toggleLang;
+  const I18N={"title": {"en": "AI Prompt Library", "zh": "AI Prompt 範本庫", "es": "Biblioteca de mensajes de IA", "hi": "एआई प्रॉम्प्ट लाइब्रेरी", "ar": "مكتبة الذكاء الاصطناعي السريعة"}, "sub": {"en": "Curated prompt templates — copy & replace {brackets}. Works with ChatGPT / Claude / Gemini.", "zh": "高品質提示詞範本，一鍵複製，把 {括號} 換成你的內容即可。適用 ChatGPT / Claude / Gemini。", "es": "Plantillas de mensajes seleccionadas: copie y reemplace {brackets}. Funciona con ChatGPT / Claude / Gemini.", "hi": "क्यूरेटेड प्रॉम्प्ट टेम्प्लेट - {ब्रैकेट्स} को कॉपी करें और बदलें। चैटजीपीटी/क्लाउड/जेमिनी के साथ काम करता है।", "ar": "قوالب المطالبة المنسقة - انسخ واستبدل {بين قوسين}. يعمل مع ChatGPT / كلود / الجوزاء."}, "copy": {"en": "Copy", "zh": "複製", "es": "Copiar", "hi": "प्रतिलिपि", "ar": "ينسخ"}, "copied": {"en": "Copied ✓", "zh": "已複製 ✓", "es": "Copiado ✓", "hi": "कॉपी किया गया ✓", "ar": "منقول ✓"}, "book_t": {"en": "Co-Intelligence (AI bestseller)", "zh": "Co-Intelligence（AI 暢銷書）", "es": "Co-Inteligencia (bestseller de IA)", "hi": "सह-इंटेलिजेंस (एआई बेस्टसेलर)", "ar": "الذكاء المشترك (الذكاء الاصطناعي الأكثر مبيعًا)"}, "book_d": {"en": "NYT bestseller · write better prompts", "zh": "紐時暢銷 · 學會寫出更好的 prompt", "es": "Bestseller del NYT · escribe mejores indicaciones", "hi": "NYT बेस्टसेलर · बेहतर संकेत लिखें", "ar": "نيويورك تايمز الأكثر مبيعا · كتابة مطالبات أفضل"}, "aff_disc": {"en": "Contains Amazon affiliate links — at no extra cost to you. As an Amazon Associate we earn from qualifying purchases.", "zh": "含 Amazon 聯盟連結，透過連結購買我們可能獲得回饋，不影響你的價格。As an Amazon Associate we earn from qualifying purchases.", "es": "Contiene enlaces de afiliados de Amazon, sin costo adicional para usted. Como asociado de Amazon, ganamos con compras que califican.", "hi": "इसमें अमेज़ॅन सहबद्ध लिंक शामिल हैं - आपके लिए कोई अतिरिक्त लागत नहीं। अमेज़ॅन एसोसिएट के रूप में हम योग्य खरीदारी से कमाते हैं।", "ar": "يحتوي على روابط تابعة لأمازون - دون أي تكلفة إضافية عليك. باعتبارنا أحد شركاء Amazon، فإننا نكسب المال من عمليات الشراء المؤهلة."}, "home": {"en": "← Back to AI Toolkit home", "zh": "← 回 AI工具人首頁", "es": "← Volver a la página de inicio del kit de herramientas de IA", "hi": "← AI टूलकिट होम पर वापस जाएं", "ar": "← العودة إلى الصفحة الرئيسية لمجموعة أدوات الذكاء الاصطناعي"}, "terms": {"en": "Terms", "zh": "服務說明", "es": "Términos", "hi": "शर्तें", "ar": "شروط"}, "privacy": {"en": "Privacy", "zh": "隱私權政策", "es": "Privacidad", "hi": "गोपनीयता", "ar": "خصوصية"}};
+  const _RTL=["ar"];let LANG=localStorage.getItem("site_lang");if(!(I18N.title&&I18N.title[LANG]))LANG=(navigator.language||"en").slice(0,2);if(!(I18N.title&&I18N.title[LANG]))LANG="en";function setLang(l){if(!(I18N.title&&I18N.title[l]))l="en";LANG=l;document.querySelectorAll("[data-i18n]").forEach(function(el){var t=I18N[el.getAttribute("data-i18n")];if(t&&t[l]!=null)el.textContent=t[l];});document.documentElement.lang=l==="zh"?"zh-Hant":l;document.documentElement.dir=_RTL.indexOf(l)>-1?"rtl":"ltr";var s=document.getElementById("langSel");if(s)s.value=l;try{localStorage.setItem("site_lang",l)}catch(e){}}function toggleLang(){}window.toggleLang=toggleLang;window.setLang=setLang;
   setLang(LANG);
   document.addEventListener('keydown',function(e){if(e.key==='/'&&e.target.tagName!=='INPUT'){e.preventDefault();document.getElementById('search').focus();}});
   document.addEventListener('click',function(ev){var a=ev.target.closest&&ev.target.closest('a');if(!a||!a.href||typeof gtag!=='function')return;var u=a.href;if(u.indexOf('amazon.')>-1)gtag('event','affiliate_click',{link_url:u});else if(u.indexOf('ko-fi.com')>-1)gtag('event','kofi_click',{link_url:u});else if(u.indexOf('youtu')>-1)gtag('event','youtube_click',{link_url:u});else if(u.indexOf('slashman413.github.io')>-1)gtag('event','internal_click',{link_url:u});});
