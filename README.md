@@ -1,4 +1,7 @@
 # 📝 AI Prompt Library
+> ## 🛍️ **500+ premium prompts**
+> This free library is a taste. **[AI Prompt 庫 — 500+ battle-tested templates ($29) on Gumroad](https://slashmaster6.gumroad.com/l/diwoc)** — Notion edition for marketing, coding, creation & productivity. Also in the **[AI Starter Bundle ($149)](https://slashmaster6.gumroad.com/l/lapcqb)**.
+
 
 > Ready-to-use prompt templates for ChatGPT / Claude / Gemini — **100% free, no signup, runs in your browser.**
 
