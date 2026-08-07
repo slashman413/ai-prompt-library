@@ -5,7 +5,7 @@
 > [**AI Prompt 庫 ($29) — 500+ battle-tested premium templates**](https://slashmaster6.gumroad.com/l/diwoc?utm_source=github&utm_medium=readme&utm_campaign=ai-prompt-library)
 > (Notion edition for marketing, coding, creation & productivity).
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-slashmantools.us-6366f1?style=flat-square&logo=github)](https://slashmantools.us/ai-prompt-library/)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-slashmantools.us-6366f1?style=flat-square&logo=github)](https://slashmantools.us/ai-prompt-library/?utm_source=github&utm_medium=readme&utm_campaign=ai-prompt-library)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](LICENSE)
 [![Works with](https://img.shields.io/badge/ChatGPT%20%7C%20Claude%20%7C%20Gemini-✔-informational?style=flat-square)]()
 [![No Signup](https://img.shields.io/badge/No%20signup-100%25%20free-success?style=flat-square)]()
@@ -34,7 +34,7 @@ ready to copy. Use it as a daily driver or as a springboard for your own prompt 
 
 ![AI Prompt Library demo](prompt-library-demo.png)
 
-**Try it live:** <https://slashmantools.us/ai-prompt-library/>
+**Try it live:** <https://slashmantools.us/ai-prompt-library/?utm_source=github&utm_medium=readme&utm_campaign=ai-prompt-library>
 
 ---
 
@@ -84,14 +84,14 @@ Also included in the **[AI Starter Bundle ($49)](https://slashmaster6.gumroad.co
 
 ## 🧰 More free tools
 
-Part of **[AI工具人 — Free Online Tools](https://slashmantools.us/tools/)** — a growing
+Part of **[AI工具人 — Free Online Tools](https://slashmantools.us/tools/?utm_source=github&utm_medium=readme&utm_campaign=ai-prompt-library)** — a growing
 collection of free AI, finance & productivity tools (中／EN):
 
 | Tool | What it does |
 |------|--------------|
-| [AI Prompt Library](https://slashmantools.us/ai-prompt-library/) | This repo — free prompt templates |
-| [AI Workflow Builder](https://workflow-builders.com) | Prompt → validated multi-agent workflow (open source) |
-| [More tools…](https://slashmantools.us/tools/) | Calculators, converters, dev tools & more |
+| [AI Prompt Library](https://slashmantools.us/ai-prompt-library/?utm_source=github&utm_medium=readme&utm_campaign=ai-prompt-library) | This repo — free prompt templates |
+| [AI Workflow Builder](https://workflow-builders.com/?utm_source=github&utm_medium=readme&utm_campaign=ai-prompt-library) | Prompt → validated multi-agent workflow (open source) |
+| [More tools…](https://slashmantools.us/tools/?utm_source=github&utm_medium=readme&utm_campaign=ai-prompt-library) | Calculators, converters, dev tools & more |
 
 ---
 
@@ -101,4 +101,4 @@ collection of free AI, finance & productivity tools (中／EN):
 
 ---
 
-*Built by [@slashman413](https://github.com/slashman413) · [slashmantools.us](https://slashmantools.us) · ☕ [Support on Ko-fi](https://ko-fi.com/ytstories0413)*
+*Built by [@slashman413](https://github.com/slashman413) · [slashmantools.us](https://slashmantools.us/?utm_source=github&utm_medium=readme&utm_campaign=ai-prompt-library) · ☕ [Support on Ko-fi](https://ko-fi.com/ytstories0413)*
