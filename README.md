@@ -1,5 +1,7 @@
 # 📝 AI Prompt Library — Free AI Prompt Templates
 
+📬 Get AI tips & prompt templates — subscribe to the Slashman Tools newsletter: https://slashmantools.us/subscribe
+
 > 500+ curated, copy-paste prompt templates for **ChatGPT / Claude / Gemini** — 100% free,
 > no signup, runs entirely in your browser. This repo is the free tier of the
 > [**AI Prompt 庫 ($29) — 500+ battle-tested premium templates**](https://slashmaster6.gumroad.com/l/diwoc?utm_source=github&utm_medium=readme&utm_campaign=ai-prompt-library)
