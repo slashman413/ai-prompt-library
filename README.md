@@ -4,7 +4,7 @@
 
 > 500+ curated, copy-paste prompt templates for **ChatGPT / Claude / Gemini** — 100% free,
 > no signup, runs entirely in your browser. This repo is the free tier of the
-> [**AI Prompt 庫 ($29) — 500+ battle-tested premium templates**](https://slashmaster6.gumroad.com/l/diwoc?utm_source=github&utm_medium=readme&utm_campaign=ai-prompt-library)
+> [**AI Prompt 庫 ($39) — 500+ battle-tested premium templates**](https://slashmaster6.gumroad.com/l/diwoc?utm_source=github&utm_medium=readme&utm_campaign=ai-prompt-library)
 > (Notion edition for marketing, coding, creation & productivity).
 
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-slashmantools.us-6366f1?style=flat-square&logo=github)](https://slashmantools.us/ai-prompt-library/?utm_source=github&utm_medium=readme&utm_campaign=ai-prompt-library)
@@ -78,7 +78,7 @@ case, with real-world examples that actually work:
 - ✍️ Creation & writing (long-form, scripts, ideation)
 - 🎯 Productivity & workflow automation
 
-👉 **[Get the AI Prompt 庫 — 500+ premium prompts ($29)](https://slashmaster6.gumroad.com/l/diwoc?utm_source=github&utm_medium=readme&utm_campaign=ai-prompt-library)**
+👉 **[Get the AI Prompt 庫 — 500+ premium prompts ($39)](https://slashmaster6.gumroad.com/l/diwoc?utm_source=github&utm_medium=readme&utm_campaign=ai-prompt-library)**
 
 Also included in the **[AI Starter Bundle ($49)](https://slashmaster6.gumroad.com/l/lapcqb?utm_source=github&utm_medium=readme&utm_campaign=ai-prompt-library)**.
 
